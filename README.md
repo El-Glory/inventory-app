@@ -67,3 +67,24 @@
 ##### VIEW CART
 
 -   api/cart/{user_id}
+
+### REQUEST
+
+` return Product::create([ 'name' => $request->name, 'slug' => $request->slug, 'price' => $request->price, 'quantity' => $request->quantity ]);`
+
+### PAYLOAD
+
+`
+[
+status: 'Successfully updated'
+{
+"id": 5,
+"user_id": 3,
+"product_id": 3,
+"quantity": 1,
+"created_at": "2022-02-08T14:01:39.000000Z",
+"updated_at": "2022-02-08T14:01:39.000000Z"
+}
+]
+
+`
