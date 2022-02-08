@@ -68,11 +68,11 @@
 
 -   api/cart/{user_id}
 
-### REQUEST
+##### REQUEST
 
 ` return Product::create([ 'name' => $request->name, 'slug' => $request->slug, 'price' => $request->price, 'quantity' => $request->quantity ]);`
 
-### PAYLOAD
+##### PAYLOAD
 
 `
 [
